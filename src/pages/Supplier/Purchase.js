@@ -22,18 +22,18 @@ const { Option } = Select;
 const { RangePicker } = DatePicker;
 
 const fieldLabels = {
-  name: '仓库名',
-  url: '仓库域名',
-  owner: '仓库管理员',
-  approver: '审批人',
-  dateRange: '生效日期',
-  type: '仓库类型',
-  name2: '任务名',
-  url2: '任务描述',
-  owner2: '执行人',
-  approver2: '责任人',
-  dateRange2: '生效日期',
-  type2: '任务类型',
+  SPcode: 'Supplier Code',
+  SPName: 'ชื่อ Supplier',
+  owner: 'เงื่อนไขการชำระเงิน',
+  SortName: 'Sort Name',
+  Address: 'ที่อยู่',
+  Contact: 'ผู้ติดต่อ',
+  Phone: 'เบอร์โทรศํพท์',
+  Email: 'E-mail',
+  FAX: 'เบอร์ FAX',
+  Super: 'ซุปเปอร์ไวเซอร์',
+  Product: 'ประธานกลุ่มสินค้า',
+  Manager: 'กรรมการผู้จัดการฝ่าย',
 };
 
 const tableData = [

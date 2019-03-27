@@ -20,6 +20,8 @@ import {
 import PageHeaderWrapper from '@/components/PageHeaderWrapper';
 import styles from './style.less';
 import Purchase from './Purchase';
+import AccTeam from './AccTeam';
+import Approver from './Approver';
 
 const Step = Steps.Step;
 const TabPane = Tabs.TabPane;
@@ -103,9 +105,9 @@ export default class Index extends PureComponent {
                         <Tabs onChange={callback} type="card">
                             <TabPane tab="ฝ่ายจัดซื้อ" key="1">
                                 <div style={{ padding: 10 }}>
-                                    <Steps current={current}>
+                                <Steps current={current}>
                                         {steps.map(item => <Step key={item.title} title={item.title} status={item.status} icon={item.icon} />)}
-                                    </Steps>
+                                    </Steps>  
                                    <Purchase />
                                     
                                 </div>
@@ -113,18 +115,14 @@ export default class Index extends PureComponent {
                             </TabPane>
                             <TabPane tab="ฝ่ายบัญชีและการเงิน" key="2">
                                 <div style={{ padding: 10 }}>
-                                    <Steps current={current}>
-                                        {steps.map(item => <Step key={item.title} title={item.title} status={item.status} icon={item.icon} />)}
-                                    </Steps>
                                     
+                                    <AccTeam />
                                     
                                 </div>
                             </TabPane>
                             <TabPane tab="Approver" key="3">
                                 <div style={{ padding: 10 }}>
-                                    <Steps current={current}>
-                                        {steps.map(item => <Step key={item.title} title={item.title} status={item.status} icon={item.icon} />)}
-                                    </Steps>
+                                   <Approver />
                                 </div>
                             </TabPane>
                           

@@ -174,7 +174,7 @@ class MarketingForm extends PureComponent {
 
         <Tabs onChange={callback} type="card">
           <TabPane tab="ฝ่ายการตลาด" key="1">
-            <Card title="ฝ่ายการตลาด" style={{ width: '100%' }}>
+            <Card title="ฝ่ายการตลาด" style={{ width: '100%' }}  extra={<Button type="primary">ตกลง</Button>} >
             <Card className={styles.card} bordered={false}>
               <Form layout="vertical" hideRequiredMark>
                 {/* Row 1 */}
@@ -414,7 +414,7 @@ class MarketingForm extends PureComponent {
             </Card>
           </TabPane>
           <TabPane tab="Unit of Measure Maintenance" key="2">
-          <Card title="เพื่อการหนดการแปลงหน่วยสำหรับการขาย" style={{ width: '100%' }}>
+          <Card title="เพื่อการหนดการแปลงหน่วยสำหรับการขาย" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
             <Form layout="vertical" hideRequiredMark>
               {/* Row 1 */}
               <Row gutter={16}>

@@ -199,7 +199,7 @@ class Productplan extends PureComponent {
 
                 <Tabs onChange={callback} type="card">
                     <TabPane tab="Item Planning Data ข้อมูล ที่ใช้ในการวางแผนผลิต" key="1">
-                        <Card title="Item Planning Data ข้อมูล ที่ใช้ในการวางแผนผลิต" style={{ width: '100%' }}>
+                        <Card title="Item Planning Data ข้อมูล ที่ใช้ในการวางแผนผลิต" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
                             <Card className={styles.card} bordered={false}>
                                 <Form layout="vertical" hideRequiredMark>
                                     {/* Row 1 */}
@@ -367,7 +367,7 @@ class Productplan extends PureComponent {
                         </Card>
                     </TabPane>
                     <TabPane tab="ข้อมูลทางด้านการควบคุมสินค้าคงคลัง" key="2">
-                        <Card title="ข้อมูลทางด้านการควบคุมสินค้าคงคลัง" style={{ width: '100%' }}>
+                        <Card title="ข้อมูลทางด้านการควบคุมสินค้าคงคลัง" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
                             <Form layout="vertical" hideRequiredMark>
 
                                 {/* Row 1 */}
@@ -407,7 +407,7 @@ class Productplan extends PureComponent {
                         </Card>
                     </TabPane>
                     <TabPane tab="ข้อมูลกระบวนการผลิต" key="3">
-                        <Card title="ข้อมูลกระบวนการผลิต" style={{ width: '100%' }}>
+                        <Card title="ข้อมูลกระบวนการผลิต" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
                             <Form layout="vertical" hideRequiredMark>
                                 {/* Row 1 */}
                                 <Row gutter={16}>

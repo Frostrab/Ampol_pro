@@ -166,8 +166,9 @@ class Accounting extends PureComponent {
     return (
       <div>
         <Tabs onChange={callback} type="card">
+        {/* Tab 1 */}
                             <TabPane tab="ข้อมูลเบื้องต้นการจัดการทางด้านบัญชีต้นทุน" key="1">
-                            <Card title="ฝ่ายบัญชีและการเงิน" style={{ width: '100%' }}>
+                            <Card title="ฝ่ายบัญชีและการเงิน" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>} >
         <Card className={styles.card} bordered={false}>
           <Form layout="vertical" hideRequiredMark>
             {/* Row 1 */}
@@ -207,8 +208,9 @@ class Accounting extends PureComponent {
         </Card>
         </Card>
         </TabPane>
+        {/* Tab 2 */}
         <TabPane tab="การคำนวณต้นทุนของสินค้ากึ่งสำเร็จรูป หรือ สินค้าสำเร็จรูป Roll-Up Cost" key="2">
-        <Card title="การคำนวณต้นทุนของสินค้ากึ่งสำเร็จรูป หรือ สินค้าสำเร็จรูป Roll-Up Cost" style={{ width: '100%' }}>
+        <Card title="การคำนวณต้นทุนของสินค้ากึ่งสำเร็จรูป หรือ สินค้าสำเร็จรูป Roll-Up Cost" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
         <Form layout="vertical" hideRequiredMark>
          
             {/* Row 1 */}
@@ -228,8 +230,9 @@ class Accounting extends PureComponent {
           </Form>
           </Card>
         </TabPane>
+        {/* Tab 3 */}
         <TabPane tab="ตรวจสอบข้อมูลและแก้ไขItem Status" key="3">
-        <Card title="ตรวจสอบข้อมูลและแก้ไขItem Status" style={{ width: '100%' }}>
+        <Card title="ตรวจสอบข้อมูลและแก้ไขItem Status" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
          {/* Row 1 */}
          <Row gutter={16}>
               <Col lg={6} md={12} sm={24}>
@@ -252,8 +255,9 @@ class Accounting extends PureComponent {
             </Row>
        </Card>
         </TabPane>
-        <TabPane tab="บันทึกข้อมูลครบถ้วน (เก็บใบ Input Form New Item Number ที่ฝ่าย บัญชีและการเงิน)" key="4">
-        <Card title="บันทึกข้อมูลครบถ้วน (เก็บใบ Input Form New Item Number ที่ฝ่าย บัญชีและการเงิน)" style={{ width: '100%' }}>
+        {/* Tab 4 */}
+        <TabPane tab="บันทึกข้อมูลครบถ้วน (เก็บใบ Input Form New Item Number ที่ฝ่าย บัญชีและการเงิน)" key="4" >
+        <Card title="บันทึกข้อมูลครบถ้วน (เก็บใบ Input Form New Item Number ที่ฝ่าย บัญชีและการเงิน)" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
         <Button type="primary">ดูเอกสาร</Button>
         </Card>
         </TabPane>

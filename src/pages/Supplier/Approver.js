@@ -62,10 +62,10 @@ function onChange2(e) {
   console.log(`checked = ${e.target.checked}`);
 }
 @connect(({ loading }) => ({
-  submitting: loading.effects['form/submitPurchase'],
+  submitting: loading.effects['form/submitApprover'],
 }))
 @Form.create()
-class Purchase extends PureComponent {
+class Approver extends PureComponent {
   state = {
     width: '100%',
   };
@@ -143,7 +143,7 @@ class Purchase extends PureComponent {
       if (!error) {
         // submit the values
         dispatch({
-          type: 'form/submitPurchase',
+          type: 'form/submitApprover',
           payload: values,
         });
       }
@@ -159,7 +159,7 @@ class Purchase extends PureComponent {
 
     return (
       <div>
-        <Card title="ฝ่ายจัดซื้อ" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>} >
+         <Card title="ฝ่ายจัดซื้อ" style={{ width: '100%' }} extra={[<Button type="primary">อนุมัติ</Button>,<Button type="danger">ไม่อนุมัติ</Button>] } >
         <Card className={styles.card} bordered={false}>
           <Form layout="vertical" hideRequiredMark>
             {/* Row1 */}
@@ -451,11 +451,11 @@ class Purchase extends PureComponent {
 
           </Form>
         </Card>
-        </Card>
+        </Card>  
 
       </div>
     );
   }
 }
 
-export default Purchase;
+export default Approver;

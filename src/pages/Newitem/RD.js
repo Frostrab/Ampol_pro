@@ -186,7 +186,7 @@ class RD extends PureComponent {
                 <Tabs onChange={callback} type="card">
                 {/* Tab 1 */}
                     <TabPane tab="น้ำหนักสินค้า" key="1">
-                        <Card title="ฝ่าย R&D" style={{ width: '100%' }}>
+                        <Card title="ฝ่าย R&D" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
                             <Card className={styles.card} bordered={false}>
                                 <Form layout="vertical" hideRequiredMark>
                                     {/* Row 1 */}
@@ -238,7 +238,7 @@ class RD extends PureComponent {
                     </TabPane>
                     {/* Tab 2 */}
                     <TabPane tab="การจัดการสูตรการผลิต" key="2">
-                        <Card title="ฝ่าย R&D" style={{ width: '100%' }}>
+                        <Card title="ฝ่าย R&D" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
                             <Form layout="vertical" hideRequiredMark>
 
                                 {/* Row 1 */}
@@ -291,7 +291,7 @@ class RD extends PureComponent {
                     </TabPane>
                     {/* Tab 3 */}
                     <TabPane tab="เพื่อกำหนดการแปลงหน่วย Work in process" key="3">
-                        <Card title="เพื่อกำหนดการแปลงหน่วย Work In Process" style={{ width: '100%' }}>
+                        <Card title="เพื่อกำหนดการแปลงหน่วย Work In Process" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
                             <Form layout="vertical" hideRequiredMark>
                                 {/* Row 1 */}
                                 <Row gutter={16}>
@@ -322,7 +322,7 @@ class RD extends PureComponent {
                     </TabPane>
                     {/* Tab 4 */}
                     <TabPane tab="Item Data เพื่อทำการกำหนด Reference ของการผลิต" key="4">
-                        <Card title="Item Data เพื่อทำการกำหนด Reference ของการผลิต" style={{ width: '100%' }}>
+                        <Card title="Item Data เพื่อทำการกำหนด Reference ของการผลิต" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
                             {/* Row 1 */}
                             <Row gutter={16}>
                                 <Col lg={6} md={12} sm={24}>
@@ -344,7 +344,7 @@ class RD extends PureComponent {
                     </TabPane>
                     {/* Tab 5 */}
                     <TabPane tab="ข้อมูลทางด้านการควบคุมสินค้าคงคลังและจัดส่ง" key="5">
-                        <Card title="ข้อมูลทางด้านการควบคุมสินค้าคงคลังและจัดส่ง" style={{ width: '100%' }}>
+                        <Card title="ข้อมูลทางด้านการควบคุมสินค้าคงคลังและจัดส่ง" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
                             {/* Row 1 */}
                             <Row gutter={16}>
                                 <Col lg={6} md={12} sm={24}>
@@ -440,7 +440,7 @@ class RD extends PureComponent {
                     </TabPane>
                     {/* Tab 6 */}
                     <TabPane tab="การจัดสถานะสินค้า" key="6">
-                        <Card title="การจัดสถานะสินค้า" style={{ width: '100%' }}>
+                        <Card title="การจัดสถานะสินค้า" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
                             {/* Row 1 */}
                             <Row gutter={16}>
                                 <Col lg={6} md={12} sm={24}>

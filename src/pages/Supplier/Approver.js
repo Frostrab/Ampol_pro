@@ -19,6 +19,8 @@ import FooterToolbar from '@/components/FooterToolbar';
 import PageHeaderWrapper from '@/components/PageHeaderWrapper';
 import TableForm from './TableForm';
 import styles from './style.less';
+import Upload from './Upload';
+import AccTeam from './AccTeam';
 
 const { Option } = Select;
 const { RangePicker } = DatePicker;
@@ -37,6 +39,16 @@ const fieldLabels = {
   Product: 'ประธานกลุ่มสินค้า',
   Manager: 'ผู้จัดการฝ่าย',
   Judge: 'กรรมการผู้จัดการฝ่าย',
+
+    // Tab 3
+    SPdata: 'Supplier Data',
+    Bank: 'Bank',
+    Currency: 'Currency',
+    Pricetable: 'Price Table',
+    CocNum: 'Coc Number',
+    BankAcc: 'Bank Account',
+    AccType: 'Acct Type',
+
 };
 
 const tableData = [
@@ -159,8 +171,8 @@ class Approver extends PureComponent {
 
     return (
       <div>
-         <Card title="ฝ่ายจัดซื้อ" style={{ width: '100%' }} extra={[<Button type="primary">อนุมัติ</Button>,<Button type="danger">ไม่อนุมัติ</Button>] } >
-        <Card className={styles.card} bordered={false}>
+         <Card title="Approver" style={{ width: '100%' }} extra={[<Button type="primary">อนุมัติ</Button>,<Button type="danger">ไม่อนุมัติ</Button>] } >
+        <Card title="ฝ่ายจัดซื้อ" className={styles.card} bordered={false}>
           <Form layout="vertical" hideRequiredMark>
             {/* Row1 */}
             <Row gutter={16}>
@@ -451,7 +463,9 @@ class Approver extends PureComponent {
 
           </Form>
         </Card>
-        </Card>  
+        </Card> 
+        <AccTeam />
+         
 
       </div>
     );

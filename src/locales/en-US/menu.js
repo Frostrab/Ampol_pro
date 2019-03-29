@@ -41,4 +41,7 @@ export default {
   'menu.inboxtable': 'Inbox',
   'menu.newitem': 'New Item',
   'menu.supplier': 'Supplier',
+  'menu.PO': 'Purchase Order',
+  'menu.productexample': 'Product Example',
+  'menu.materialm' : 'Material-Maintenance',
 };

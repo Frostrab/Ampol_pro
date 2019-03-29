@@ -15,8 +15,7 @@ import {
     Checkbox,
     Upload,
     Divider,
-
-
+    
 } from 'antd';
 import { connect } from 'dva';
 import FooterToolbar from '@/components/FooterToolbar';

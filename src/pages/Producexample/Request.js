@@ -204,7 +204,7 @@ class Request extends PureComponent {
                                     })(<Input placeholder="" />)}
                                 </Form.Item>
                             </Col>
-                            <Col xl={{ span: 8, offset: 2 }} lg={{ span: 8 }} md={{ span: 12 }} sm={24}>
+                            <Col xl={{ span: 6, offset: 2 }} lg={{ span: 8 }} md={{ span: 12 }} sm={24}>
                                 <Form.Item label={fieldLabels.Status}>
                                     {getFieldDecorator('Status', {
                                         rules: [{ required: true, message: '' }],
@@ -232,7 +232,7 @@ class Request extends PureComponent {
 
                                 <Checkbox onChange={onChange2}>อื่นๆ</Checkbox>
                             </Col>
-                            <Col xl={{ span: 4, offset: 1 }} lg={{ span: 8 }} md={{ span: 12 }} sm={24}>
+                            <Col xl={{ span: 6, offset: 1 }} lg={{ span: 8 }} md={{ span: 12 }} sm={24}>
 
                                 <Input placeholder="" />
                             </Col>
@@ -390,7 +390,7 @@ class Request extends PureComponent {
 
                                 <Checkbox onChange={onChange2}>ไม่มี</Checkbox>
                             </Col>
-                            <Col xl={{ span: 4, offset: 2 }} lg={{ span: 8 }} md={{ span: 12 }} sm={24}>
+                            <Col xl={{ span: 6, offset: 2 }} lg={{ span: 8 }} md={{ span: 12 }} sm={24}>
                                 <Form.Item label={fieldLabels.AND}>
                                     {getFieldDecorator('AND', {
                                         rules: [{ required: true, message: '' }],
@@ -400,7 +400,7 @@ class Request extends PureComponent {
                             </Col>
                         </Row>
                         <Row gutter={16}>
-                            <Col lg={3} md={12} sm={24}>
+                            <Col lg={6} md={12} sm={24}>
                                 <Form.Item label={fieldLabels.Book}>
                                     {getFieldDecorator('Book', {
                                         rules: [{ required: true, message: '' }],

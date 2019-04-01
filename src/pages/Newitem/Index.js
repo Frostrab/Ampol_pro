@@ -99,7 +99,7 @@ export default class Index extends PureComponent {
         } = this.state;
         return (
             <div>
-                <PageHeaderWrapper title="New Item">
+                <PageHeaderWrapper title="NEW ITEM NUMBER : MANUFACTURED ITEM">
                     <Card bordered={false}>
                         <Steps current={current}>
                             {stepsBuyer.map(item => <Step key={item.title} title={item.title} status={item.status} icon={item.icon} />)}

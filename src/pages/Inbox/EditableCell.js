@@ -240,7 +240,9 @@ export default class EditableTable extends React.Component {
           rowClassName={() => 'editable-row'}
           rowSelection={rowSelection}
           bordered
-        //   title={() => 'Inbox'}
+          // title={() => {{[<Button type="primary">อนุมัติทั้งหมด</Button>,
+          // <Button type="danger">ไม่อนุมัติทั้งหมด</Button>]}}}
+
           dataSource={dataSource}
           columns={columns}
         />

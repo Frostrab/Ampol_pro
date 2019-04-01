@@ -42,6 +42,7 @@ class InboxTable extends PureComponent {
   
     return (
       <PageHeaderWrapper title="Inbox">
+     
         <Card bordered={false} title="Inbox">
          <div>
              

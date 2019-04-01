@@ -209,15 +209,16 @@ class RD extends PureComponent {
                                                 })(<Input placeholder="" />)}
                                             </Form.Item>
                                         </Col>
-                                        <Col xl={{ span: 4, offset: 2 }} lg={{ span: 8 }} md={{ span: 12 }} sm={24}>
+                                        <Col xl={{ span: 6, offset: 2 }} lg={{ span: 8 }} md={{ span: 12 }} sm={24}>
                                             <Form.Item label={fieldLabels.UM}>
                                                 {getFieldDecorator('UM', {
                                                     rules: [{ required: true, message: '' }],
                                                 })(<Input placeholder="" />)}
+                                                <span className="ant-form-text">(น้ำหนักสุทธิต่อหน่วยขายไม่รวม Package)</span>
                                             </Form.Item>
                                         </Col>
                                         <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
-                                                <p>(น้ำหนักสุทธิต่อหน่วยขายไม่รวม Package)</p>
+                                                {/* <p>(น้ำหนักสุทธิต่อหน่วยขายไม่รวม Package)</p> */}
                                         </Col>
                                     </Row>
                                     {/* Row 3 */}
@@ -408,10 +409,11 @@ class RD extends PureComponent {
                                         {getFieldDecorator('UM', {
                                             rules: [{ required: true, message: '' }],
                                         })(<Input placeholder="" />)}
+                                        <span className="ant-form-text">(Ship Weight / จำนวนสินค้าต่อหน่วยขาย)</span>
                                     </Form.Item>
                                 </Col>
                                 <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
-                                    <p>(Ship Weight / จำนวนสินค้าต่อหน่วยขาย)</p>
+                                    {/* <p>(Ship Weight / จำนวนสินค้าต่อหน่วยขาย)</p> */}
                                 </Col>
                             </Row>
                             {/* Row 4 */}
@@ -428,11 +430,12 @@ class RD extends PureComponent {
                                         {getFieldDecorator('UM', {
                                             rules: [{ required: true, message: '' }],
                                         })(<Input placeholder="" />)}
+                                        <span className="ant-form-text">(น้ำหนักรวม : หน่วยขาย)</span>
                                     </Form.Item>
                                 </Col>
                                 <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
 
-                                    <p>(น้ำหนักรวม : หน่วยขาย)</p>
+                                    {/* <p>(น้ำหนักรวม : หน่วยขาย)</p> */}
                                 </Col>
                             </Row>
                         </Card>

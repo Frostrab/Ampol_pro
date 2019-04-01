@@ -226,11 +226,12 @@ class MarketingForm extends PureComponent {
                       {getFieldDecorator('Prodbrand', {
                         rules: [{ required: true, message: '' }],
                       })(<Input placeholder="" />)}
+                      <span className="ant-form-text">(ตราผลิตภัณฑ์)</span>
                     </Form.Item>
 
                   </Col>
                   <Col xl={{ span: 6, offset: 2 }} lg={{ span: 8 }} md={{ span: 12 }} sm={24}>
-                    <p>(ตราผลิตภัณฑ์)</p>
+                    {/* <span className="ant-form-text">(ตราผลิตภัณฑ์)</span> */}
                   </Col>
                   <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
 
@@ -238,26 +239,28 @@ class MarketingForm extends PureComponent {
                 </Row>
                 {/* Row 4 */}
                 <Row gutter={16}>
-                  <Col lg={4} md={12} sm={24}>
+                  <Col lg={6} md={12} sm={24}>
                     <Form.Item label={fieldLabels.Alternate}>
                       {getFieldDecorator('Alternate', {
                         rules: [{ required: true, message: '' }],
                       })(<Input placeholder="" />)}
+                      <span className="ant-form-text">(หน่วยขาย)</span>
                     </Form.Item>
 
                   </Col>
                   <Col xl={{ span: 3, offset: 2 }} lg={{ span: 6 }} md={{ span: 12 }} sm={24}>
-                    <p>(หน่วยขาย)</p>
+                    {/* <p>(หน่วยขาย)</p> */}
                   </Col>
-                  <Col xl={{ span: 4, offset: 2 }} lg={{ span: 8 }} md={{ span: 18 }} sm={24}>
+                  <Col xl={{ span: 6, offset: 2 }} lg={{ span: 8 }} md={{ span: 18 }} sm={24}>
                     <Form.Item label={fieldLabels.Conversion}>
                       {getFieldDecorator('Conversion', {
                         rules: [{ required: true, message: '' }],
                       })(<Input placeholder="" />)}
+                      <span className="ant-form-text">(จำนวนสินค้า: หน่วยขาย)</span>
                     </Form.Item>
                   </Col>
-                  <Col xl={{ span: 5, offset: 2 }} lg={{ span: 10 }} md={{ span: 18 }} sm={24}>
-                      <p>(จำนวนสินค้า: หน่วยขาย)</p>
+                  <Col xl={{ span: 6, offset: 2 }} lg={{ span: 10 }} md={{ span: 18 }} sm={24}>
+                      {/* <p>(จำนวนสินค้า: หน่วยขาย)</p> */}
                   </Col>
                 </Row>
                 {/* Row 5 */}
@@ -322,10 +325,12 @@ class MarketingForm extends PureComponent {
                       {getFieldDecorator('Safety', {
                         rules: [{ required: true, message: '' }],
                       })(<Input placeholder="" />)}
+                      <span className="ant-form-text">(FG Product)</span>
+                      
                     </Form.Item>
                   </Col>
                   <Col xl={{ span: 8, offset: 0 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
-                      <p>(FG Product)</p>
+                      {/* <p>(FG Product)</p> */}
                   </Col>
                 </Row>
                 {/* Row 9 */}

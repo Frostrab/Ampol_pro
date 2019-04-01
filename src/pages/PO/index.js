@@ -38,9 +38,11 @@ export default class Index extends PureComponent {
       <PageHeaderWrapper>
         <hr></hr>
         <div style={{ marginBottom: 10 }}>
+        <Card>
           <Steps current={current}>
             {stepsBuyer.map(item => <Step key={item.title} title={item.title} status={item.status} icon={item.icon} />)}
           </Steps>
+          </Card>
         </div>
         <Card title="ใบเบิกสินค้ำย่อย" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
 

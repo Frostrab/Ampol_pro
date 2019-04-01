@@ -253,13 +253,11 @@ class AccTeam extends PureComponent {
 
                             <Col xl={{ span: 6, offset: 2 }} lg={{ span: 8 }} md={{ span: 12 }} sm={24}>
                             <Form.Item label={fieldLabels.Bank}>
-                                    {getFieldDecorator('Bank', {
-                                        rules: [{ required: true, message: '' }],
-                                    })(
-                                        <Input placeholder="" />
-                                        // <Checkbox onChange={onChange2}>Transfer</Checkbox>
-                                        // <Checkbox onChange={onChange2}>Cheque</Checkbox>
-                                    )}
+                                
+                                       {/* <Input placeholder="" /> */}
+                                        <Checkbox onChange={onChange2}>Transfer</Checkbox>
+                                        <Checkbox onChange={onChange2}>Cheque</Checkbox>
+                                    
                                 </Form.Item>
                             </Col>
                             <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>

@@ -99,9 +99,11 @@ export default class Index extends PureComponent {
             <div>
                 <PageHeaderWrapper title="การขอเพิ่ม Supplier">
                     <Card bordered={false}>
+                    <Card bordered={false}>
                         <Steps current={current}>
                             {stepsBuyer.map(item => <Step key={item.title} title={item.title} status={item.status} icon={item.icon} />)}
                         </Steps>
+                        </Card> 
                         <Tabs onChange={callback} type="card">
                             <TabPane tab="ฝ่ายจัดซื้อ" key="1">
                                 <div style={{ padding: 10 }}>

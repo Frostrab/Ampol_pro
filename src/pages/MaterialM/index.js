@@ -184,9 +184,11 @@ export default class Index extends PureComponent {
         <PageHeaderWrapper title="Material Master Maintenance">
 
           <Card bordered={false}>
+          <Card bordered={false}>
             <Steps current={current}>
               {steps.map(item => <Step key={item.title} title={item.title} status={item.status} icon={item.icon} />)}
             </Steps>
+            </Card>
             <Card title="ใบขอสร้าง/แก้ไขข้อมูลหลักวัสดุ(Material Master Maintenance Form)" style={{ width: '100%' }} extra={<Button type="primary">ตกลง</Button>}>
 
 

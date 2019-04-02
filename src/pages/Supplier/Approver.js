@@ -208,6 +208,7 @@ class Approver extends PureComponent {
                   })(
                     <Input placeholder="" />
                   )}
+                  <span className="ant-form-text">วัน</span> 
                 </Form.Item>
               </Col>
               <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>

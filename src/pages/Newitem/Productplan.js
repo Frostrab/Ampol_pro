@@ -218,7 +218,7 @@ class Productplan extends PureComponent {
                                                 })(<Input placeholder="" />)}
                                             </Form.Item>
                                         </Col>
-                                        <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
+                                        <Col xl={{ span: 6, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
                                             <Form.Item label={fieldLabels.Max}>
                                                 {getFieldDecorator('Max', {
                                                     rules: [{ required: true, message: '' }],
@@ -242,7 +242,7 @@ class Productplan extends PureComponent {
                                                 })(<Input placeholder="" />)}
                                             </Form.Item>
                                         </Col>
-                                        <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
+                                        <Col xl={{ span: 6, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
                                             <Form.Item label={fieldLabels.PerUnit}>
                                                 {getFieldDecorator('PerUnit', {
                                                     rules: [{ required: true, message: '' }],
@@ -306,7 +306,7 @@ class Productplan extends PureComponent {
                                                 })(<Input placeholder="" />)}
                                             </Form.Item>
                                         </Col>
-                                        <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
+                                        <Col xl={{ span: 6, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
                                             <Form.Item label={fieldLabels.Inspect}>
                                                 {getFieldDecorator('Inspect', {
                                                     rules: [{ required: true, message: '' }],
@@ -330,7 +330,7 @@ class Productplan extends PureComponent {
                                                 })(<DatePicker onChange={onChange} />)}
                                             </Form.Item>
                                         </Col>
-                                        <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
+                                        <Col xl={{ span: 6, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
                                             <Form.Item label={fieldLabels.Ord}>
                                                 {getFieldDecorator('Ord', {
                                                     rules: [{ required: true, message: '' }],
@@ -354,7 +354,7 @@ class Productplan extends PureComponent {
                                                 })(<Input placeholder="" />)}
                                             </Form.Item>
                                         </Col>
-                                        <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
+                                        <Col xl={{ span: 6, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
                                             <Form.Item label={fieldLabels.Yield}>
                                                 {getFieldDecorator('Yield', {
                                                     rules: [{ required: true, message: '' }],
@@ -386,7 +386,7 @@ class Productplan extends PureComponent {
                                             })(<Input placeholder="" />)}
                                         </Form.Item>
                                     </Col>
-                                    <Col xl={{ span: 8, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
+                                    <Col xl={{ span: 6, offset: 2 }} lg={{ span: 10 }} md={{ span: 24 }} sm={24}>
                                         <Form.Item label={fieldLabels.DrawLoc}>
                                             {getFieldDecorator('DrawLoc', {
                                                 rules: [{ required: true, message: '' }],

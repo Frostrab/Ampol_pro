@@ -287,8 +287,8 @@ class Request extends PureComponent {
                                     {getFieldDecorator('Doccount', {
                                         rules: [{ required: true, message: '' }],
                                     })(<Input placeholder="" />)}
+                                     <span className="ant-form-text">แผ่น</span> 
                                 </Form.Item>
-
 
                             </Col>
 

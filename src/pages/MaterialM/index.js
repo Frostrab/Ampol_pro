@@ -292,7 +292,10 @@ export default class Index extends PureComponent {
                     <Form.Item label={fieldLabels.Plant}>
                       {getFieldDecorator('Plant', {
                         rules: [{ required: true, message: '' }],
-                      })(<DatePicker />)}
+                      })( <Select placeholder="กรุณาเลือก Plant">
+                      <Option value="Plant1">Plant1</Option>
+                      <Option value="Plant2">Plant2</Option>
+                    </Select>)}
                     </Form.Item>
                   </Col>
 
@@ -300,7 +303,10 @@ export default class Index extends PureComponent {
                     <Form.Item label={fieldLabels.BatcManage}>
                       {getFieldDecorator('BatcManage', {
                         rules: [{ required: true, message: '' }],
-                      })(<DatePicker />)}
+                      })( <Select placeholder="กรุณาเลือก option">
+                      <Option value="Option1">Option1</Option>
+                      <Option value="Option2">Option2</Option>
+                    </Select>)}
                     </Form.Item>
                   </Col>
                   <Col xl={{ span: 8, offset: 2 }} lg={{ span: 8 }} md={{ span: 12 }} sm={24}>
